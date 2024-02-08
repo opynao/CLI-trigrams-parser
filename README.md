@@ -12,18 +12,25 @@ GoogleTest Framework will fetch content using internet connection
 
 #### How to build
 > cd CLI-trigrams-parser
+>
 > mkdir build
+> 
 > cd build
+> 
 > cmake ..
+> 
 > cmake --build .
+
 How to run the app depends on your OS:
-* for linux
+* for Linux
 > ./CLI-Trigrams-parser
+> 
 > ./tests/CLI-Trigrams-parser-tests
 
 * for Windows
 > ./Debug/CLI-Trigrams-parser.exe
-> ./tests/CLI-Trigrams-parser-tests.exe
+> 
+> ./Debug/tests/CLI-Trigrams-parser-tests.exe
 
 ### Algorithm choice discussion
 When tackling the problem of finding the longest common substring between two strings, I considered various algorithms, including both *dynamic programming* and *suffix tree-based* approaches. After analyzing the problem and evaluating the available algorithms, I chose to implement the solution using dynamic programming rather than the suffix tree approach with the Ukkonen algorithm. Below are the reasons for this choice:
